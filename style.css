@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Marck+Script&display=swap');
 
+:root{
+    --fonte1: Verdana, Geneva, Thaoma, sans-serif;
+    --fonte2:  "Jura", serif;
+    --fonte3: "Marck Script", serif;
+}
+
+
+
+
 /* CONFIGURAÇÕES GERAIS */
 
 *{
@@ -12,6 +21,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 /* HEADER */
@@ -21,19 +31,22 @@ header{
     text-align: center;
 }
 
-header > h1 {
+header  h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 8vw;
 }
 
-header > p {
+header  p {
     padding-bottom: 50px;
 }
 
-header a{
-    color: #fff;
+header a, footer a{
+    color: #fac517;
     text-decoration: none;
     font-weight: bolder;
+    font-family: var(--fonte2);
+
 }
 
 header a:hover, footer a:hover{
@@ -46,6 +59,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -59,8 +74,10 @@ section.imagem{
 }
 
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.253)
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 10px;
+
 }
 
 
