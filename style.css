@@ -33,6 +33,7 @@ header{
     justify-items: center;
     background-image: url(img/cordel03.jpg);
     background-size: contain;
+    background-position: center center;
 }
 
 .header{
@@ -93,6 +94,7 @@ section.imagem{
     color: #fff;
     box-shadow: inset 6px 6px 13px 0px black;
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -120,4 +122,9 @@ footer{
     color: #fff;
     text-align: center;
     padding: 10px;
+    font-size: 1vw;
+}
+
+footer a{
+    font-size: 1.5vw;
 }
